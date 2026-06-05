@@ -5,7 +5,7 @@ const SkillCard = (props) => {
   return (
     <div>
         <li>{props.category}</li>
-        {/* <li>{props.skill}</li> */}
+        <li>{props.skill}</li>
     </div>
   )
 }

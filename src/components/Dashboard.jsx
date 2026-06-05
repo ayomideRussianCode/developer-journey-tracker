@@ -10,7 +10,8 @@ const Dashboard = () => {
     <div>
       Dashboard
       <div>
-        <SkillCard category={entries[0][0]} skill={entries[0][1]} />
+        <SkillCard category={entries[0][0]}/>
+        <SkillCard skill={entries[0][1]} />
       </div>
     </div>
   );
