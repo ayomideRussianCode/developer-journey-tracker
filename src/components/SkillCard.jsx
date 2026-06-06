@@ -4,13 +4,19 @@ const SkillCard = (props) => {
     console.log(props)
   return (
     <div>
-        <h1 className="text-2xl">{props.category}</h1>
-        <ul>{props.skill.map((skill, i)=>(
-            <li key={i} >{skill.name}</li>
-        ))}</ul>
+      <h1 className="text-2xl">{props.category}</h1>
+      <ul>
+        {props.skill.map((skill, i) => (
+          <li key={i}>
+            {skill.completed ? "✅" : "❌"} {skill.name}
+          </li>
+        ))}
+      </ul>
     </div>
-  )
+  );
 }
+
+
 
 export default SkillCard
 
