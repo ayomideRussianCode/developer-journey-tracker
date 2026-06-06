@@ -10,8 +10,9 @@ const Dashboard = () => {
     <div>
       Dashboard
       <div>
-        <SkillCard category={entries[0][0]}/>
-        <SkillCard skill={entries[0][1]} />
+        {entries.map((entry, i) => (
+          <SkillCard key={i} category={entry[0]} skill={entry[1]} /> 
+        ))}
       </div>
     </div>
   );
