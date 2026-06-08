@@ -1,7 +1,15 @@
 
 
 const SkillCard = (props) => {
-    console.log(props)
+
+    const totalSkills = props.skill.length;
+    console.log(totalSkills);
+
+    const completedSkills = props.skill.filter(skill => skill.completed).length;
+    console.log(completedSkills);
+
+    const percentage = Math.floor(completedSkills/totalSkills * 100);
+    console.log(percentage);
   return (
     <div>
       <h1 className="text-2xl">{props.category}</h1>
